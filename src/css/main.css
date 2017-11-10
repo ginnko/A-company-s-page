@@ -1,0 +1,1424 @@
+/*==============
+页面基本默认样式
+================*/
+html {
+    color: #999;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*=====
+工具样式
+=======*/
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+/* ===================
+以下两个共同用来清除浮动
+ =====================*/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*==============
+自定义样式
+================*/
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: #fffafa;
+}
+
+@font-face {
+    font-family: 'ico';
+    src: url("../fonts/ionicons.eot?v=2.0.0");
+    src: url("../fonts/ionicons.eot?v=2.0.0#iefix") format("embedded-opentype"),
+    url("../fonts/ionicons.ttf?v=2.0.0") format("truetype"),
+    url("../fonts/ionicons.woff?v=2.0.0") format("woff"),
+    url("../fonts/ionicons.svg?v=2.0.0#Ionicons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*=============
+网站头部
+===============*/
+header {
+    width: 100%;
+}
+
+header section#navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+}
+
+div.inner-position {
+    position: relative;
+    height: 80px;
+}
+
+header section#navigation div.header-left {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+header section#navigation nav.header-middle {
+    text-align: center;
+    line-height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header section#navigation div.header-right {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+header section#navigation div.header-left a {
+    background-image: url(../img/logo1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+}
+
+header section#navigation nav.header-middle li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+header section#navigation div.header-right a {
+    border: 1px solid;
+    font-size: 1rem;
+    border-radius: 2px;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 5px;
+}
+
+header section#navigation div.header-right a:nth-child(3) {
+    display: none;
+}
+
+header section#navigation div.header-right a:last-child {
+    border: none;
+    border-radius: 0;
+    border-left: 1px solid;
+    padding-left: 10px;
+}
+
+header section#navigation div.header-right div {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+header section#ad div.outer div.inner p {
+    margin: 0;
+    color: #fffafa;
+
+}
+
+header section#ad div.outer div.inner p:first-child {
+    font-size: 3.75rem;
+    text-align: center;
+    margin-top: 200px;
+}
+
+header section#ad div.outer div.inner p:nth-child(2) {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+header section#ad div.outer div.inner a {
+    font-size: 1.125rem;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    height: 45px;
+    width: 150px;
+    border: 1px solid;
+    line-height: 45px;
+    border-radius: 3px;
+}
+
+/*轮播样式*/
+header section#ad div.outer {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 622px;
+}
+
+header section#ad div.outer div.inner {
+    width: 200%;
+    font-size: 0;
+    position: absolute;
+    /*left: 0;*/
+    /*top: 0;*/
+    transition: all 1s;
+}
+
+header section#ad div.outer div.inner div {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 622px;
+}
+
+header section#ad div.outer div.inner div:first-child {
+    background-image: url(../img/banner1@v2.0.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header section#ad div.outer div.inner div:last-child {
+    background-image: url(../img/banner2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*轮播按钮样式*/
+header section#ad div.outer div.carousel {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
+}
+
+header section#ad div.outer div.carousel div.carousel-button {
+    display: inline-block;
+    width: 110px;
+    height: 4px;
+    background-color: snow;
+    overflow: hidden;
+}
+
+header section#ad div.outer div.carousel div.carousel-button a {
+    display: block;
+    height: 4px;
+    width: 110px;
+    margin: 0;
+    padding: 0;
+    background-color: #A4A5AA;
+}
+
+header section#ad div.outer div.carousel div.carousel-button a#left-button {
+    margin-left: -110px;
+}
+
+/*轮播切换样式*/
+.slide-right-out {
+    margin-left: 0 !important;
+}
+
+.slide-right-in {
+    animation-duration: 1s;
+    animation-name: sliderightin;
+    animation-fill-mode: forwards;
+}
+
+@keyFrames sliderightin {
+    from {
+        margin-left: 0;
+    }
+
+    to {
+        margin-left: 110px;
+    }
+}
+
+.slide-left-in {
+    animation-duration: 1s;
+    animation-name: slideleftin;
+    animation-fill-mode: forwards;
+}
+
+@keyFrames slideleftin {
+    from {
+        margin-left: 0;
+    }
+
+    to {
+        margin-left: -110px;
+    }
+}
+
+.slide-left-out {
+    margin-left: 0 !important;
+}
+
+/*shrink-button样式变化*/
+.activeClockwise {
+    transform: rotate(45deg);
+    top: 8px !important;
+}
+
+.activeAntiClockwise {
+    transform: rotate(-45deg);
+    top: 8px !important;
+}
+
+.expand {
+    background-color: rgba(11, 24, 29, 1) !important;
+    height: 100% !important;
+    z-index: 100 !important;
+}
+
+.vertical {
+    display: block !important;
+    text-align: left !important;
+    border: none !important;
+    margin-bottom: 20px !important;
+    margin-left: 30px !important;
+    line-height: 1.5rem !important;
+    font-size: 0.875rem !important;
+}
+
+.header-right-shrink {
+    display: block !important;
+    position: static !important;
+    transform: none !important;
+}
+
+.header-middle-shrink {
+    display: block !important;
+    padding-top: 85px !important;
+    border-bottom: 1px solid #243034 !important;
+
+}
+
+.border-shrink {
+    border-bottom: 1px solid #243034;
+}
+
+/*导航部分的响应式布局*/
+@media screen and (max-width: 1025px) {
+    header section#ad div.outer div.inner p:first-child {
+        font-size: 2.25rem;
+    }
+
+    header section#ad div.outer div.inner p:nth-child(2) {
+        font-size: 0.75rem;
+    }
+
+    header section#ad div.outer div.inner a {
+        font-size: 0.75rem;
+    }
+
+    header section#ad div.outer div.carousel div.carousel-button {
+        width: 50px;
+        height: 4px;
+        background-color: snow;
+        overflow: hidden;
+    }
+
+    header section#ad div.outer div.inner a {
+        height: 26px;
+        width: 90px;
+        line-height: 26px;
+    }
+
+    header section#navigation div.shrink-button {
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+        cursor: pointer;
+
+    }
+
+    header section#navigation div.shrink-button div.shrink-line {
+        width: 18px;
+        height: 2px;
+        background-color: #B6E1F2;
+        transition: all 0.3s;
+        position: absolute;
+        /*z-index: 20;*/
+    }
+
+    header section#navigation div#first-line {
+        top: 5px;
+    }
+
+    header section#navigation div#second-line {
+        top: 12px;
+    }
+
+    header section#navigation nav.header-middle {
+        display: none;
+    }
+
+    header section#navigation div.header-right {
+        display: none;
+    }
+
+    header section#navigation div.header-left a {
+        width: 130px;
+    }
+
+    header section#navigation div.header-right div {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    header section#navigation div.header-right div a {
+        border: none;
+    }
+}
+
+/*============
+产品特色展示部分
+==============*/
+section#speciality {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+section#speciality ul li {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    font-size: 1.375rem;
+    box-sizing: border-box;
+    line-height: 2rem;
+}
+
+section#speciality ul li a {
+    display: block;
+    color: black;
+    margin-top: 50px;
+}
+
+section#speciality ul li:hover {
+    background-color: #F1F1F1;
+}
+
+section#speciality ul li:hover img.original {
+    display: none;
+}
+
+section#speciality ul li:hover img.new {
+    display: block;
+}
+
+section#speciality ul li a img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+section#speciality ul li a img.new {
+    display: none;
+}
+
+section#speciality ul li a span {
+    font-size: 1rem;
+    display: block;
+    color: dimgray;
+}
+
+section#speciality ul li a span.text {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+section#speciality ul li a span.line {
+    width: 90px;
+    height: 2px;
+    background-color: #BFBFBF;
+    margin: 20px auto;
+}
+
+section#speciality ul li:hover a span.line {
+    background-color: #178ae1;
+    animation-duration: 1s;
+    animation-name: linemove;
+}
+
+@keyframes linemove {
+    from {
+        width: 0;
+    }
+    to {
+        width: 90px;
+    }
+}
+
+/*产品特色展示响应式样式*/
+@media screen and (max-width: 1025px) {
+    section#speciality ul li {
+        font-size: 0.75rem;
+    }
+
+    section#speciality ul li img {
+        width: 42px;
+        height: 45px;
+    }
+
+    section#speciality ul li span {
+        display: none !important;
+    }
+}
+
+/*==============
+产品优点展示部分
+================*/
+section#superiority {
+    background-color: #fafbfc;
+    font-size: 0;
+}
+
+section#superiority div {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section#superiority > div + div {
+    border-top: 1px dotted #dadada;
+}
+
+section#superiority div div {
+    display: inline-block;
+    width: 47%;
+    font-size: 1rem;
+}
+
+section#superiority div div.hold-image {
+    height: 300px;
+    /*width: 100%;*/
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+section#superiority div div.hold-image:nth-child(1) {
+    background-image: url(../img/3-1@v2.0.jpg);
+}
+
+section#superiority div div.hold-image:nth-child(2) {
+    background-image: url(../img/3-2@v2.0.jpg);
+}
+
+section#superiority div div.hold-image:nth-child(3) {
+    background-image: url(../img/3-3@v2.0.jpg);
+}
+
+section#superiority div div.hold-text {
+    padding-top: 50px;
+    line-height: 1.625rem;
+    vertical-align: top;
+}
+
+section#superiority div div.hold-text p:nth-child(1) {
+    font-size: 1.875rem;
+    color: #2C2C2C;
+}
+
+section#superiority div div.hold-tex p:nth-child(2) {
+    font-size: 1rem;
+}
+
+/*产品优点响应式布局样式*/
+@media screen and (max-width: 1025px) {
+    section#superiority div {
+        width: 100%;
+    }
+
+    section#superiority div div {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    section#superiority div div p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section#superiority div div p:nth-child(1) {
+        font-size: 1rem !important;
+    }
+
+    section#superiority div div p:nth-child(2) {
+        font-size: 0.75rem;
+    }
+}
+
+/*========
+产品优势展示
+==========*/
+section#goodness {
+    margin-top: 50px;
+}
+
+section#goodness div.title p {
+    color: black;
+}
+
+section#goodness div.title p:first-child {
+    font-size: 1.875rem;
+    text-align: center;
+}
+
+section#goodness div.title p:last-child {
+    font-size: 1.125rem;
+    text-align: center;
+    width: 735px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2.125rem;
+    letter-spacing: 2px;
+}
+
+section#goodness div.content {
+    text-align: center;
+
+}
+
+section#goodness div.content div.hold-text {
+    display: inline-block;
+    vertical-align: top;
+    width: 47%;
+}
+
+section#goodness div.content div.hold-image {
+    display: inline-block;
+    width: 47%;
+}
+
+section#goodness div.content div.hold-text > ul > li p {
+    width: 100px;
+    padding-left: 40px;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 1.25rem;
+    color: #2C2C2C;
+}
+
+section#goodness div.content div.hold-text > ul > li p:nth-child(1) {
+    background-image: url(../img/ad1.png);
+}
+
+section#goodness div.content div.hold-text > ul > li p:nth-child(2) {
+    background-image: url(../img/ad2.png);
+}
+
+section#goodness div.content div.hold-text > ul > li p:nth-child(3) {
+    background-image: url(../img/ad3.png);
+}
+
+section#goodness div.content div.hold-text > ul > li p:nth-child(4) {
+    background-image: url(../img/ad4.png);
+}
+
+section#goodness div.content div.hold-text > ul > li p:nth-child(5) {
+    background-image: url(../img/ad5.png);
+}
+
+section#goodness div.content div.hold-text > ul > li ul {
+    padding-left: 40px;
+}
+
+section#goodness div.content div.hold-text > ul > li ul li {
+    width: 410px;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+section#goodness div.content div.hold-text > ul > li ul li i {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #42B9E5;
+    margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 1025px) {
+    section#goodness div.title p:nth-child(1) {
+        font-size: 1.125rem;
+    }
+
+    section#goodness div.title p:nth-child(2) {
+        font-size: 0.75rem;
+        width: 100%;
+    }
+
+    section#goodness div.content p {
+        font-size: 1rem !important;
+    }
+
+    section#goodness div.content ul {
+        font-size: .75rem !important;
+        text-align: left;
+    }
+
+    section#goodness div.content > ul > li {
+        width: 100% !important;
+    }
+
+    section#goodness div.content ul i {
+        display: none !important;
+    }
+
+    section#goodness div.content div.hold-text {
+        width: 100% !important;
+    }
+
+    section#goodness div.content ul li ul li {
+        width: auto !important;
+        display: inline-block !important;
+    }
+
+    section#goodness div.content ul li ul li span {
+        /*display: inline!important;*/
+    }
+
+    section#goodness div.content div.hold-image {
+        display: none;
+    }
+}
+
+/*===========
+服务部分样式
+=============*/
+section#service {
+    background-image: url(../img/bg6.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 200px;
+    height: 500px;
+    margin-bottom: 100px;
+}
+
+section#service div p {
+    font-size: 1.125rem;
+    color: snow;
+    margin: 0;
+}
+
+section#service div p:nth-child(1) {
+    font-size: 1.875rem;
+}
+
+section#service ul {
+    font-size: 0;
+    margin-top: 50px;
+}
+
+section#service ul li {
+    display: inline-block;
+    width: 232.75px;
+    font-size: 1rem;
+    vertical-align: top;
+}
+
+section#service ul li + li {
+    margin-left: 30px;
+}
+
+section#service ul li img {
+    width: 100%;
+    display: block;
+    margin: 0;
+}
+
+section#service ul li div {
+    margin: 0;
+    box-shadow: 1px 1px 4px 1px #eeeeee;
+    background-color: #ffffff;
+    height: 300px;
+}
+
+section#service ul li div p {
+    font-size: 1rem;
+    color: #999999;
+    padding: 13px 20px 30px 20px;
+    letter-spacing: 2px;
+    line-height: 1.875rem;
+}
+
+section#service ul li div p:first-child {
+    font-size: 1.5rem;
+    color: #333333;
+    padding-top: 38px;
+    padding-bottom: 20px;
+}
+
+section#service ul li a {
+    display: block;
+    width: 117px;
+    height: 38px;
+    color: #0088cc;
+    border: 1px solid;
+    line-height: 38px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section#service ul li div span {
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #178AE1;
+    margin: 10px auto;
+}
+
+/*服务部分响应式样式*/
+@media screen and (max-width: 1025px) {
+    section#service > div {
+        margin-top: -100px;
+    }
+
+    section#service > div p:first-child {
+        font-size: 1.125rem;
+    }
+
+    section#service > div p:last-child {
+        display: none;
+    }
+
+    section#service > ul > li {
+        display: block !important;
+        font-size: 0 !important;
+        width: 444px;
+        height: 117px;
+        margin-left: auto !important;
+        margin-bottom: 20px !important;
+        margin-right: auto !important;
+    }
+
+    section#service > ul > li > img {
+        display: inline-block !important;
+        width: 146px;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        vertical-align: top;
+    }
+
+    section#service > ul > li > div {
+        display: inline-block !important;
+        font-size: 0 !important;
+        width: 298px;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        vertical-align: top;
+    }
+
+    section#service > ul > li > div p:nth-of-type(1) {
+        font-size: 1rem;
+        margin: 2px 0 0 0;
+        padding: 0;
+    }
+
+    section#service > ul > li > div p:nth-of-type(2) {
+        font-size: 0.75rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    section#service > ul > li > div span,
+    section#service > ul > li > div a {
+        display: none;
+    }
+
+    section#service {
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section#service > ul > li {
+        display: block !important;
+        font-size: 0 !important;
+        width: 95%;
+        text-align: left;
+    }
+
+    section#service > ul > li > div {
+        margin-left: 146px;
+        display: block !important;
+        width: auto;
+    }
+
+    section#service > ul > li > img {
+        display: block;
+        float: left;
+    }
+
+    section#service {
+        margin-bottom: 40px;
+    }
+
+}
+
+/*=========
+信息部分样式
+===========*/
+section#information {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0;
+}
+
+section#information article {
+    display: inline-block;
+    width: 42%;
+    vertical-align: top;
+}
+
+section#information article > p {
+    font-size: 1.875rem;
+    color: black;
+}
+
+section#information article:first-child {
+    margin-right: 16%;
+}
+
+section#information article:first-child img {
+    width: 100%;
+}
+
+section#information article ul li {
+    position: relative;
+    font-size: 1rem;
+
+}
+
+section#information article ul li p {
+    position: absolute;
+    left: 0;
+    margin: 0;
+    color: #999999;
+}
+
+section#information article ul li span {
+    color: #0088cc;
+    position: absolute;
+    right: 0;
+}
+
+section#information article ul li a {
+    display: block;
+    font-size: 1.25rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #333333;
+    text-align: justify;
+    letter-spacing: 1.2px;
+}
+
+section#information article:first-child ul li a:hover {
+    text-decoration: underline;
+
+}
+
+section#information article:nth-child(2) ul li span {
+    color: #999999;
+}
+
+section#information article:nth-child(2) ul li {
+    background-color: #F7F9FA;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 120px;
+    position: relative;
+    z-index: -2;
+}
+
+section#information article:nth-child(2) ul li div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+section#information article div {
+    text-align: right;
+}
+
+section#information article div > a {
+    color: #178ae1;
+    font-size: 1rem;
+}
+
+section#information article div > a:hover {
+    text-decoration: underline;
+}
+
+/*信息部分响应式样式*/
+@media screen and (max-width: 1025px) {
+    section#information article > a {
+        display: none;
+    }
+
+    section#information article p {
+        font-size: 1.125rem;
+    }
+
+    section#information article {
+        display: block;
+        width: 90%;
+        margin: 0;
+    }
+
+    section#information article p {
+        font-size: 1.125rem;
+    }
+
+    section#information article li p {
+        font-size: 0.75rem;
+    }
+
+    section#information article span {
+        font-size: 0.75rem;
+    }
+
+    section#information article a {
+        font-size: 0.875rem !important;
+    }
+
+    section#information article ul li {
+        background-color: transparent !important;
+        margin-bottom: 0 !important;
+        height: auto !important;
+    }
+
+    section#information article ul li div {
+        position: static !important;
+        width: 100% !important;
+        transform: none !important;
+    }
+
+    section#information article:nth-of-type(2) span {
+        left: 0;
+        text-align: left !important;
+    }
+
+    section#information article:nth-of-type(2) a {
+        padding-bottom: 0;
+    }
+
+}
+
+/*=========
+合作部分样式
+===========*/
+section#cooperation {
+    text-align: center;
+    color: #666666;
+    margin-top: 50px;
+}
+
+section#cooperation > p:first-child {
+    font-size: 1.875rem;
+
+}
+
+section#cooperation > p:nth-child(2) {
+    font-size: 1.125rem;
+    padding-bottom: 30px;
+}
+
+section#cooperation > div {
+    background-image: url(../img/8@v2.0.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 718px;
+    position: relative;
+    color: snow;
+}
+
+section#cooperation img {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+section#cooperation > div div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+section#cooperation > div p {
+    font-size: 1.375rem;
+    letter-spacing: 2.67px;
+}
+
+section#cooperation > div p span {
+    font-size: 2.5rem;
+}
+
+section#cooperation > div div::before {
+    content: "\201C";
+    font-size: 16.875rem;
+    position: absolute;
+    left: 21%;
+    top: -100%;
+}
+
+section#cooperation > div div::after {
+    content: "\201D";
+    font-size: 16.875rem;
+    position: absolute;
+    left: 70%;
+    top: 15%;
+}
+
+/*合作部分相应式样式*/
+@media screen and (max-width: 1025px) {
+    section#cooperation > p {
+        display: none;
+    }
+
+    section#cooperation > img {
+        display: none;
+    }
+
+    section#cooperation > div > div > p {
+        font-size: 0.75rem;
+    }
+
+    section#cooperation > div > div > p > span {
+        font-size: 1.125rem;
+    }
+
+    section#cooperation > div div::before {
+        font-size: 5.625rem;
+        position: absolute;
+        left: 10%;
+        top: -100%;
+    }
+
+    section#cooperation > div div::after {
+        font-size: 5.625rem;
+        position: absolute;
+        left: 90%;
+        top: 75%;
+    }
+    section#cooperation > div{
+        height: 300px;
+    }
+}
+
+/*======
+底部样式
+=======*/
+footer {
+    /*background-color: ;*/
+    background: linear-gradient(to bottom, #020515, #06223f);
+}
+
+footer div#goToTop {
+    width: 65px;
+    height: 65px;
+    display: none;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: #F1F5F8;
+    z-index: 10;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+footer div#goToTop:hover {
+    background-color: #6b6b6b;
+
+}
+
+footer div#goToTop div {
+    width: 30px;
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    font-size: 32px;
+    color: #999999;
+}
+
+footer div#goToTop div:before {
+    content: "\f126";
+    font-family: "ico";
+}
+
+footer a {
+    color: #999999;
+    font-size: 0.75rem;
+}
+
+footer > div {
+    position: relative;
+}
+
+footer div div.footer-left {
+    position: absolute;
+    left: 20px;
+}
+
+footer div div.footer-left img {
+    width: 94px;
+    height: 40px;
+}
+
+footer div p.footer-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+footer div div.footer-left p + p {
+    margin-top: 10px;
+}
+
+footer div nav {
+    text-align: left;
+    padding-left: 35%;
+    padding-right: 15%;
+}
+
+footer div nav > ul > li {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 80px;
+}
+
+footer div div.footer-right {
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+
+footer div div.footer-right img {
+    width: 80px;
+    height: 80px;
+}
+
+footer div.policy {
+    font-size: 0.75rem;
+    line-height: 0.5rem;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+footer div.policy a {
+    color: #178ae1;
+}
+
+footer div div.footer-left p:nth-child(2)::before {
+    content: "\f2d2";
+    font-family: "ico";
+}
+
+footer div div.footer-left p:nth-child(3)::before {
+    content: "\f2eb";
+    font-family: "ico";
+}
+
+footer div p {
+    font-size: 0.75rem;
+}
+
+footer div p.footer-title {
+    color: snow;
+    font-size: 0.875rem;
+}
+
+/*底部部分相应式样式*/
+@media screen and (max-width: 1025px) {
+    footer div.footer-inner p.footer-title{
+        font-size: 10px;
+    }
+    footer div div.footer-right {
+        display: none;
+    }
+
+    footer div nav ul ul {
+        display: none;
+    }
+
+    footer div nav ul li {
+        padding-right: 5px !important;
+        line-height: 1 !important;
+    }
+
+    footer div.footer-left {
+        padding-top: 40px;
+    }
+
+    footer div.footer-inner nav {
+        padding: 0 !important;
+        font-size: 0.75rem;
+        border-bottom: 1px solid #c2c2c2;
+        /*position: relative;*/
+        margin-top: -200px;
+        margin-bottom: 130px;
+    }
+
+    footer div.footer-inner nav p {
+        padding: 0 !important;
+        margin: 0;
+        margin-left: 5px;
+    }
+
+    footer div.footer-inner nav li + li {
+        border-left: 1px solid snow;
+    }
+
+    footer div.footer-left {
+        width: 90% !important;
+        position: static!important;
+    }
+
+    footer div.footer-left p:nth-child(2) {
+        cursor: pointer;
+        width: 70%;
+        border: 1px solid snow;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    footer div.footer-left div {
+        margin-top: -60px;
+        margin-bottom: 60px;
+    }
+
+    footer div.footer-left div img {
+        width: 46px;
+        height: 20px;
+
+    }
+
+    footer div.footer-left p:nth-child(3) {
+        display: none;
+    }
+    footer div.footer-left p:nth-child(4),
+    footer div.footer-left p:nth-child(5){
+        font-size: 10px;
+        display: inline-block;
+    }
+
+    footer div#goToTop {
+        width: 30px;
+        height: 30px;
+        padding-top: 0 !important;
+        font-size: 18px !important;
+        line-height: 1!important;
+        right: 10px!important;
+    }
+
+    footer div#goToTop div{
+        padding-top: 0 !important;
+    }
+
+    footer div.policy {
+        visibility: hidden;
+    }
+}
