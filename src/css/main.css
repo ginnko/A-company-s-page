@@ -133,6 +133,9 @@ header section#navigation nav.header-middle {
     margin-left: auto;
     margin-right: auto;
 }
+header section#navigation nav.header-middle ul li a{
+    display: block;
+}
 
 header section#navigation div.header-right {
     position: absolute;
@@ -151,10 +154,39 @@ header section#navigation div.header-left a {
     height: 80px;
 }
 
-header section#navigation nav.header-middle li {
+header section#navigation nav.header-middle>ul>li {
     display: inline-block;
-    margin: 0 30px;
+    margin: 0;
+    padding: 0 30px;
+    position: relative;
 }
+/*多层导航样式*/
+header section#navigation nav.header-middle>ul>li ul{
+    display: none;
+    position: absolute;
+    font-size: 0.875rem;
+    color: #b1b1b1;
+    padding-left: 30px;
+    padding-right: 60px;
+    margin-left: -30px;
+    top: 80px;
+}
+header section#navigation nav.header-middle>ul>li ul>li{
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    height: 50px;
+    text-align: left;
+    line-height: 50px;
+}
+header section#navigation nav.header-middle>ul>li:hover{
+    background-color: #0d272f
+}
+header section#navigation nav.header-middle>ul>li:hover ul{
+    display: block;
+    background-color: #0d272f
+}
+
 
 header section#navigation div.header-right a {
     border: 1px solid;

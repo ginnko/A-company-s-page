@@ -118,5 +118,12 @@ background: linear-gradient(to bottom, #020515, #06223f);括号中的分别表�
     margin-left: 300px;  
     }  
 
-3.
+## 2017.11.11
+1. 解决bug1
+> bug1：在小屏下，点击又上角shrink-button展开菜单后再拉宽页面，展开的菜单无法自动收回。
+
+   * 在main.js中对window对象添加[resize](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onresize)事件，用来监控window尺寸的变化  
+   * 使用属性**window.document.documentElement.clientWidth**来判断窗口尺寸是否达到临界点。关于[**clientWidth**](https://developer.mozilla.org/en-US/docs/Web/API/Element/clientWidth)：includes padding but not the vertical scrollbar (if present, if rendered), border or margin。
+   ![clientHeight](https://i.imgur.com/4Bt3sAQ.png)
+## 2017.11.14
 

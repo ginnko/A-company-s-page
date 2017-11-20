@@ -18,7 +18,6 @@ function slideright() {
     carousel_box.style.left = "-100%";
     ele_left.className = "slide-right-out";
     ele_right.className = "slide-right-in";
-    console.log(ele_right.style.marginLeft);
 }
 
 //滚动显示导航条背景操作
@@ -47,7 +46,6 @@ goToTop.addEventListener("click", function () {
     var goback = document.documentElement || document.body;
     var time = setInterval(function () {
         goback.scrollTop -= 50;
-        console.log(goback.scrollTop);
         if(goback.scrollTop <= 0){
             clearInterval(time);
         }
@@ -66,7 +64,6 @@ var innerPosition = document.getElementsByClassName("inner-position")[0];
 var flag = true;
 shrinkButton.addEventListener("click", function(){
     if(flag === true){
-        console.log("flag-true");
         flag = false;
         firstLine.classList.add("activeClockwise");
         secondLine.classList.add("activeAntiClockwise");
@@ -75,12 +72,10 @@ shrinkButton.addEventListener("click", function(){
         headerRight.classList.add("header-right-shrink");
         innerPosition.classList.add("border-shrink");
         for(var i=0; i<headerContent.length; i++){
-            console.log("haha");
             headerContent[i].classList.add("vertical");
         }
         //headerContent 是一个htmlcollection ，无法使用foreach函数
     }else{
-        console.log("flag-false");
         flag = true;
         firstLine.classList.remove("activeClockwise");
         secondLine.classList.remove("activeAntiClockwise");
@@ -94,5 +89,37 @@ shrinkButton.addEventListener("click", function(){
         }
 
     }
-
 });
+
+//拉宽网页自动取消shrink模式
+
+window.addEventListener("resize", function(){
+    var pageWidth = window.document.documentElement.clientWidth;
+    if(pageWidth > 1024){
+        firstLine.classList.remove("activeClockwise");
+        secondLine.classList.remove("activeAntiClockwise");
+        shrinkButton.classList.remove("expand");
+        navigation.classList.remove("expand");
+        headerMiddle.classList.remove("header-middle-shrink");
+        headerRight.classList.remove("header-right-shrink");
+        innerPosition.classList.remove("border-shrink");
+        for(var j=0; j<headerContent.length; j++){
+            headerContent[j].classList.remove("vertical");
+        }
+    }
+});
+//鼠标移到导航项上导航条颜色改变
+//此处可以使用apply或call绑定this，这个试一下
+var navItem = document.getElementsByClassName("header-content");
+for(var m = 0; m < navItem.length; m++){
+    navItem[m].addEventListener("mouseover", function(){
+        console.log("start");
+        nav.style.backgroundColor = "rgb(11, 24, 29)";
+    });
+}
+for(var n = 0; n < navItem.length; n++){
+    navItem[n].addEventListener("mouseout", function(){
+        console.log("end");
+        nav.style.backgroundColor = "rgb(11, 24, 29)";
+    });
+}
