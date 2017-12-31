@@ -1,0 +1,26 @@
+{
+  "name": "company_page",
+  "version": "1.0.0",
+  "description": "imitate company's old website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ginnko/company_page.git"
+  },
+  "author": "ginnko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ginnko/company_page/issues"
+  },
+  "homepage": "https://github.com/ginnko/company_page#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1"
+  },
+  "dependencies": {
+    "gulp-file-include": "^2.0.0"
+  }
+}

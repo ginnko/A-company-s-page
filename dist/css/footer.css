@@ -1,0 +1,219 @@
+/*======
+底部样式
+=======*/
+footer {
+  /*background-color: ;*/
+  background: linear-gradient(to bottom, #020515, #06223f);
+}
+
+footer div#goToTop {
+  width: 65px;
+  height: 65px;
+  display: none;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  background-color: #F1F5F8;
+  z-index: 10;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+footer div#goToTop:hover {
+  background-color: #6b6b6b;
+
+}
+
+footer div#goToTop div {
+  width: 30px;
+  height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  font-size: 32px;
+  color: #999999;
+}
+
+footer div#goToTop div:before {
+  content: "\f126";
+  font-family: "ico";
+}
+
+footer a {
+  color: #999999;
+  font-size: 0.75rem;
+}
+
+footer > div {
+  position: relative;
+}
+
+footer div div.footer-left {
+  position: absolute;
+  left: 20px;
+}
+
+footer div div.footer-left img {
+  width: 94px;
+  height: 40px;
+}
+
+footer div p.footer-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+footer div div.footer-left p + p {
+  margin-top: 10px;
+}
+
+footer div nav {
+  text-align: left;
+  padding-left: 35%;
+  padding-right: 15%;
+}
+
+footer div nav > ul > li {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 80px;
+}
+
+footer div div.footer-right {
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+
+footer div div.footer-right img {
+  width: 80px;
+  height: 80px;
+}
+
+footer div.policy {
+  font-size: 0.75rem;
+  line-height: 0.5rem;
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 30px;
+}
+
+footer div.policy a {
+  color: #178ae1;
+}
+
+footer div div.footer-left p:nth-child(2)::before {
+  content: "\f2d2";
+  font-family: "ico";
+}
+
+footer div div.footer-left p:nth-child(3)::before {
+  content: "\f2eb";
+  font-family: "ico";
+}
+
+footer div p {
+  font-size: 0.75rem;
+}
+
+footer div p.footer-title {
+  color: snow;
+  font-size: 0.875rem;
+}
+
+/*底部部分相应式样式*/
+@media screen and (max-width: 1025px) {
+  footer div.footer-inner p.footer-title{
+      font-size: 10px;
+  }
+  footer div div.footer-right {
+      display: none;
+  }
+
+  footer div nav ul ul {
+      display: none;
+  }
+
+  footer div nav ul li {
+      padding-right: 5px !important;
+      line-height: 1 !important;
+  }
+
+  footer div.footer-left {
+      padding-top: 40px;
+  }
+
+  footer div.footer-inner nav {
+      padding: 0 !important;
+      font-size: 0.75rem;
+      border-bottom: 1px solid #c2c2c2;
+      /*position: relative;*/
+      margin-top: -200px;
+      margin-bottom: 130px;
+  }
+
+  footer div.footer-inner nav p {
+      padding: 0 !important;
+      margin: 0;
+      margin-left: 5px;
+  }
+
+  footer div.footer-inner nav li + li {
+      border-left: 1px solid snow;
+  }
+
+  footer div.footer-left {
+      width: 90% !important;
+      position: static!important;
+  }
+
+  footer div.footer-left p:nth-child(2) {
+      cursor: pointer;
+      width: 70%;
+      border: 1px solid snow;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+  }
+
+  footer div.footer-left div {
+      margin-top: -60px;
+      margin-bottom: 60px;
+  }
+
+  footer div.footer-left div img {
+      width: 46px;
+      height: 20px;
+
+  }
+
+  footer div.footer-left p:nth-child(3) {
+      display: none;
+  }
+  footer div.footer-left p:nth-child(4),
+  footer div.footer-left p:nth-child(5){
+      font-size: 10px;
+      display: inline-block;
+  }
+
+  footer div#goToTop {
+      width: 30px;
+      height: 30px;
+      padding-top: 0 !important;
+      font-size: 18px !important;
+      line-height: 1!important;
+      right: 10px!important;
+  }
+
+  footer div#goToTop div{
+      padding-top: 0 !important;
+  }
+
+  footer div.policy {
+      visibility: hidden;
+  }
+}
