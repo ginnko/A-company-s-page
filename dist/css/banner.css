@@ -1,0 +1,37 @@
+section.banner{
+  height: 540px;
+  background-color: #02091A;
+  width: 100%;
+}
+
+section.banner ul{
+  font-size: 0;
+  width: 98%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+section.banner ul li{
+  display: inline-block;
+  width: 50%;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+section.banner ul li div#banner-intro{
+  font-size: 50px;
+  color: snow;
+  margin-bottom: 30px;
+}
+
+section.banner ul li div#banner-content{
+  font-size: 18px;
+  color: snow;
+}
+
+section.banner ul li img#banner-image{
+  height: 540px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
