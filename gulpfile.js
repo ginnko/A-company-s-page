@@ -8,35 +8,40 @@ gulp.task('fileinclude', function(){
     prefix: '@@',
     basepath: '@file'
   }))
-  .pipe(gulp.dest('dist'));
+  .pipe(gulp.dest('dist'))
+  .pipe(livereload());
 });
 
 gulp.task('css', function(){
   gulp.src('./src/css/*.css')
-  .pipe(gulp.dest('dist/css'));
+  .pipe(gulp.dest('dist/css'))
+  .pipe(livereload());
 });
 
 gulp.task('script', function(){
   gulp.src('./src/js/*.js')
-  .pipe(gulp.dest('dist/js'));
+  .pipe(gulp.dest('dist/js'))
+  .pipe(livereload());
 });
 
 gulp.task('image', function(){
   gulp.src('./src/img/*.*')
-  .pipe(gulp.dest('dist/img'));
+  .pipe(gulp.dest('dist/img'))
+  .pipe(livereload());
 });
 
 gulp.task('font', function(){
   gulp.src('./src/fonts/*.*')
-  .pipe(gulp.dest('dist/fonts'));
+  .pipe(gulp.dest('dist/fonts'))
+  .pipe(livereload());
 });
 
 
 gulp.task('watch', function(){
+  livereload.listen();
   gulp.watch('./src/css/*.css', ['css']);
   gulp.watch('./src/js/*.js', ['script']);
   gulp.watch('./src/*.html', ['fileinclude']);
-  livereload.listen();
   gulp.watch(['./dist/**/*.*']).on('change', livereload.changed);
 });
 

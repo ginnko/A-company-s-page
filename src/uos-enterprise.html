@@ -10,12 +10,42 @@
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/banner.css">
-  <link rel="stylesheet" href="./css/enterprise.css">
+  <link rel="stylesheet" href="./css/product.css">
 </head>
 <body>
 <div class="wrapper">
   @@include('./header.html')
   @@include('./banner.html')
+  <section class="brief-intro">
+    <div class="introTitle">
+      <img src="./img/logo@v2.0.png" alt="">
+      <span>UOS Enterprise</span>
+    </div>
+    <ul class="introContent">
+      <li><div>
+        <img src="./img/feature_1@v2.0.png" alt="">
+        <span>网络</span>
+        </div>
+        <p>完全隔离的二层虚拟网络，路由器端口映射，支持防火墙，负载均衡等。</p></li>
+      <li><div>
+          <img src="./img/feature_2@v2.0.png" alt="">
+          <span>云硬盘</span>
+          </div>
+          <p>稳定的I/O表现，客服业务尖峰，高性能、SLA 保证，秒级备份恢复。</p></li>
+    </ul>
+    <ul class="introContent">
+      <li><div>
+          <img src="./img/feature_3@v2.0.png" alt="">
+          <span>对象存储</span>
+          </div>
+          <p>海量数据，弹性扩容，支持多种访问协议。</p></li>
+      <li><div>
+          <img src="./img/feature_4@v2.0.png" alt="">
+          <span>云主机</span>
+          </div>
+          <p>秒级部署，在线迁移，VNC 管理，多 Hypervisor 支持。</p></li>
+    </ul>
+  </section>
   @@include('./footer.html')
 </div>
 <script src="js/data.js"></script>

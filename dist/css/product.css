@@ -1,0 +1,67 @@
+section.brief-intro{
+  width: 100%;
+}
+
+section.brief-intro div.introTitle{
+  padding: 0 15px;
+}
+
+section.brief-intro div.introTitle img{
+  width: 57px;
+  height: 57px;
+}
+section.brief-intro div.introTitle span{
+  color: #333333;
+  font-size: 34px;
+}
+
+section.brief-intro ul.introContent{
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0;
+}
+
+section.brief-intro ul.introContent li{
+  display: inline-block;
+  width: 291px;
+  height: 142px;
+  background: url('../img/feature_bg@v2.0.png') no-repeat center/contain;
+  margin-top: 10px;
+  text-align: left;
+  font-size: 14px;
+  vertical-align: top;
+  position: relative;
+  /* padding: 10px; */
+}
+section.brief-intro ul.introContent li+li{
+  margin-left: 30px;
+}
+
+section.brief-intro ul.introContent li div {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+section.brief-intro ul.introContent li div img{
+  width: 34.5px;
+  height: 34.5px;
+  vertical-align: middle;
+}
+section.brief-intro ul.introContent li div span{
+  font-size: 22px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 5px;
+
+}
+
+section.brief-intro ul.introContent li p{
+  margin-bottom: 0;
+  position: absolute;
+  top: 50px;
+  margin: 10px 10px;
+}
