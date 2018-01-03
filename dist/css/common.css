@@ -23,13 +23,6 @@ ul {
   margin-left: auto;
 }
 
-.pull-right {
-  float: right !important;
-}
-
-.pull-left {
-  float: left !important;
-}
 
 .text-right {
   text-align: right !important;
@@ -64,18 +57,7 @@ ul {
 }
 
 
-/* ===================
-以下两个共同用来清除浮动
- =====================*/
- .clearfix:before,
- .clearfix:after {
-     content: " ";
-     display: table;
- }
- 
- .clearfix:after {
-     clear: both;
- }
+
 /*==============
 自定义样式
 ================*/
@@ -87,4 +69,15 @@ body {
 a {
   text-decoration: none;
   color: #fffafa;
+}
+
+@font-face {
+  font-family: 'ico';
+  src: url("../fonts/ionicons.eot?v=2.0.0");
+  src: url("../fonts/ionicons.eot?v=2.0.0#iefix") format("embedded-opentype"),
+  url("../fonts/ionicons.ttf?v=2.0.0") format("truetype"),
+  url("../fonts/ionicons.woff?v=2.0.0") format("woff"),
+  url("../fonts/ionicons.svg?v=2.0.0#Ionicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }

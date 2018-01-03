@@ -1,5 +1,28 @@
+/* ===================
+以下两个共同用来清除浮动
+ =====================*/
+ .clearfix:before,
+ .clearfix:after {
+     content: " ";
+     display: table;
+ }
+ 
+ .clearfix:after {
+     clear: both;
+ }
+
+ .pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+/* ======================================= */
+
 section.brief-intro{
   width: 100%;
+  margin-top: 50px;
 }
 
 section.brief-intro div.introTitle{
@@ -64,4 +87,66 @@ section.brief-intro ul.introContent li p{
   position: absolute;
   top: 50px;
   margin: 10px 10px;
+}
+section.goodness div{
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.goodness div+div{
+  border-top: 1px dotted gray;
+}
+section.goodness div img{
+  width: 45%;
+}
+
+section.goodness div div{
+  width: 45%;
+}
+section.goodness div div p:nth-of-type(1){
+  font-size: 30px;
+
+} 
+section.goodness div div p:nth-of-type(2){
+  font-size: 16px;
+} 
+section.fix-problem{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+}
+section.fix-problem p{
+  font-size: 34px;
+}
+
+section.fix-problem div div img{
+  width: 54px;
+  height: 59px;
+}
+section.fix-problem div div span{
+  font-size: 22px;
+  display: inline-block;
+  margin-left: 20px;
+}
+section.fix-problem div p{
+  height: 100px;
+  border: 1px solid #DEDEDE;
+  background-color: #FAFBFC;
+  font-size: 16px;
+  padding-top: 20px;
+  text-indent: 20px;
+}
+section.frame{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  margin-bottom: 20px;
+}
+section.frame p{
+  font-size: 34px;
+}
+section.frame img{
+  width: 100%;
 }
