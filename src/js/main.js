@@ -113,13 +113,11 @@ window.addEventListener("resize", function(){
 var navItem = document.getElementsByClassName("header-content");
 for(var m = 0; m < navItem.length; m++){
     navItem[m].addEventListener("mouseover", function(){
-        console.log("start");
         nav.style.backgroundColor = "rgb(11, 24, 29)";
     });
 }
 for(var n = 0; n < navItem.length; n++){
     navItem[n].addEventListener("mouseout", function(){
-        console.log("end");
         nav.style.backgroundColor = "rgb(11, 24, 29)";
     });
 }

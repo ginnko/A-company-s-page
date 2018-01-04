@@ -63,6 +63,9 @@ header section#navigation nav.header-middle>ul>li {
 header section#navigation nav.header-middle>ul>li.hSpecial {
   min-height: 279px;
 }
+header section#navigation nav.header-middle>ul>li.hSpecial>ul ul {
+  min-height: 200px;
+}
 
 
 header section#navigation nav.header-middle>ul>li>ul {
@@ -83,12 +86,11 @@ header section#navigation nav.header-middle>ul>li>ul>li {
   height: 50px;
   text-align: left;
   line-height: 50px;
-  position: relative;
 }
 
 header section#navigation nav.header-middle>ul>li>ul>li>ul {
   position: absolute;
-  left: 100px;
+  left: 140px;
   top: -1px;
   width: 110px;
 }
