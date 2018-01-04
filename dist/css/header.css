@@ -61,7 +61,7 @@ header section#navigation nav.header-middle>ul>li {
 
 /*多层导航样式*/
 
-header section#navigation nav.header-middle>ul>li ul {
+header section#navigation nav.header-middle>ul>li>ul {
   display: none;
   position: absolute;
   font-size: 0.875rem;
@@ -72,13 +72,19 @@ header section#navigation nav.header-middle>ul>li ul {
   top: 80px;
 }
 
-header section#navigation nav.header-middle>ul>li ul>li {
+header section#navigation nav.header-middle>ul>li>ul>li {
   padding: 0;
   margin: 0;
   width: 150px;
   height: 50px;
   text-align: left;
   line-height: 50px;
+}
+
+header section#navigation nav.header-middle>ul>li>ul>li>ul {
+  position: absolute;
+  left: 100px;
+  width: 140px;
 }
 
 header section#navigation nav.header-middle>ul>li:hover {
