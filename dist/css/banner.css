@@ -29,6 +29,17 @@ section.banner ul li div#banner-content{
   color: snow;
 }
 
+section.banner ul li a{
+  display: block;
+  width: 140px;
+  height: 40px;
+  background-color: #42b9e5;
+  border-radius: 2px;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+
 section.banner ul li img#banner-image{
   height: 540px;
   display: block;

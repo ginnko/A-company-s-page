@@ -5,6 +5,7 @@ var children = target.getElementsByTagName("ul");
 target.addEventListener("mouseover", function(e){
   var child = isChild(e.target, "A");
   var value = child? getValue(e.target): void 0;
+  console.log(value);
   if(value){
     hideAll();
     showOne(value);
@@ -29,6 +30,7 @@ function hideAll(){
 function showOne(value){
   Array.prototype.map.call(children, function(ele){
     var mark = ele.getAttribute("value");
+    console.log("mark: " + mark + "/ value: " + value);
     if(mark === value){
       ele.setAttribute("style", "display: block;");
     }

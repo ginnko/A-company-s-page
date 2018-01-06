@@ -32,6 +32,7 @@ header section#navigation nav.header-middle {
 
 header section#navigation nav.header-middle ul li a {
   display: block;
+  width: 100%;
 }
 
 header section#navigation div.header-right {
@@ -73,16 +74,15 @@ header section#navigation nav.header-middle>ul>li>ul {
   position: absolute;
   font-size: 0.875rem;
   color: #b1b1b1;
-  padding-left: 30px;
-  padding-right: 60px;
   margin-left: -30px;
-  top: 80px;
+  text-indent: 30px;
+  
 }
 
 header section#navigation nav.header-middle>ul>li>ul>li {
   padding: 0;
   margin: 0;
-  width: 150px;
+  width: 230px;
   height: 50px;
   text-align: left;
   line-height: 50px;
@@ -91,7 +91,7 @@ header section#navigation nav.header-middle>ul>li>ul>li {
 header section#navigation nav.header-middle>ul>li>ul>li>ul {
   position: absolute;
   left: 140px;
-  top: -1px;
+  top: 0;
   width: 110px;
 }
 
@@ -100,14 +100,22 @@ header section#navigation nav.header-middle>ul>li>ul>li>ul.tem-hide{
 }
 
 header section#navigation nav.header-middle>ul>li:hover {
-  background-color: #0d272f
+  background-color: #0d272f;
 }
 
 header section#navigation nav.header-middle>ul>li:hover ul {
   display: block;
-  background-color: #0d272f
+  background-color: #0d272f;
+}
+header section#navigation nav.header-middle>ul>li ul li:hover{
+  display: block;
+  background-color: #3a5963;
 }
 
+nav.header-middle a{
+  width: 100%;
+  display: inline-block;
+}
 header section#navigation div.header-right a {
   border: 1px solid;
   font-size: 1rem;
@@ -181,3 +189,6 @@ header section#navigation div.header-right div {
       border: none;
   }
 }
+
+/* 工具样式 */
+
