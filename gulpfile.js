@@ -25,7 +25,7 @@ gulp.task('script', function(){
 });
 
 gulp.task('image', function(){
-  gulp.src(['./src/img/header/*.*', './src/img/footer/*.*', './src/img/index/*.*', './src/img/product/uos-enterprise/*.*', './src/img/product/uos-operator/*.*', './src/img/product/uos-director/*.*', './src/img/product/uos-manager/*.*'])
+  gulp.src(['./src/img/product/*.*', './src/img/header/*.*', './src/img/footer/*.*', './src/img/index/*.*', './src/img/product/uos-enterprise/*.*', './src/img/product/uos-operator/*.*', './src/img/product/uos-director/*.*', './src/img/product/uos-manager/*.*'])
   .pipe(gulp.dest('dist/img'))
   .pipe(livereload());
 });
