@@ -1,0 +1,55 @@
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+
+div.wrapper section.client-field{
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.wrapper section.client-field p.client-title{
+  font-size: 36px;
+  color: #32397b;
+}
+
+div.wrapper section.client-field div.client-card{
+  float: left;
+  width: 30%;
+  border-radius: 3px;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,.19);
+  position: relative;
+}
+
+div.wrapper section.client-field div.client-card p.client-name{
+  font-size: 20px;
+  text-align: center;
+  color: #2c2c2c;
+}
+div.wrapper section.client-field div.client-card img.client-img{
+  width: 100%;
+  display: block;
+}
+
+div.wrapper section.client-field div.client-card div.client-modal{
+  display: none;
+  background-color: rgba(0,0,0,.75);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* div.wrapper section.client-field div.client-card:hover div.client-modal, */
+div.wrapper section.client-field div.client-card p.client-name:hover div.client-modal,
+/* div.wrapper section.client-field div.client-card img.client-img:hover div.client-modal*/{ 
+  display: block;
+}

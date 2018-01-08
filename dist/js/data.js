@@ -26,5 +26,12 @@ var data = {
     'content': 'UOS Operator 是集监控，日志，告警于一体的综合性运维平台，时刻全方位监控 UOS 平台的运行情况，及时获悉事件通知，对数据进行深入分析，及时发现问题，维护平台稳定。',
     'url': './img/bannerpic-4@v2.0.png',
     'button': true
+  },
+  '客户案例':{
+    'parent': '解决方案',
+    'title': '有云，分享创造共赢',
+    'content': '在向互联网＋转型的过程中，如何选择合适的IT技术？有云是您的不二之选，成功的客户案例，让您再也没有后顾之忧',
+    'url': './img/banner-clients.png',
+    'button': false
   }
 };
