@@ -28,6 +28,7 @@ div.wrapper section.client-field div.client-card{
   position: relative;
   margin-right: 5%;
   margin-bottom: 60px;
+  height: 240px;
 }
 
 div.wrapper section.client-field div.client-card:nth-of-type(3n){
@@ -38,14 +39,16 @@ div.wrapper section.client-field div.client-card p.client-name{
   font-size: 20px;
   text-align: center;
   color: #2c2c2c;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
-div.wrapper section.client-field div.client-card img.client-img{
-  width: 100%;
-  display: block;
+div.wrapper section.client-field div.client-card div.client-img{
   margin-top: 50px;
+  width: 100%;
+  height: 110px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
+
 
 div.wrapper section.client-field div.client-card div.client-modal{
   display: none;

@@ -61,7 +61,7 @@ header section#navigation nav.header-middle>ul>li {
 
 
 /*多层导航样式*/
-header section#navigation nav.header-middle>ul>li.hSpecial {
+header section#navigation nav.header-middle>ul>li.hSpecial:hover {
   min-height: 279px;
 }
 header section#navigation nav.header-middle>ul>li.hSpecial>ul ul {
