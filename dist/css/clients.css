@@ -11,7 +11,7 @@
 
 
 div.wrapper section.client-field{
-  width: 95%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -26,16 +26,25 @@ div.wrapper section.client-field div.client-card{
   border-radius: 3px;
   box-shadow: 0 0 3px 0 rgba(0,0,0,.19);
   position: relative;
+  margin-right: 5%;
+  margin-bottom: 60px;
+}
+
+div.wrapper section.client-field div.client-card:nth-of-type(3n){
+  margin-right: 0;
 }
 
 div.wrapper section.client-field div.client-card p.client-name{
   font-size: 20px;
   text-align: center;
   color: #2c2c2c;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 div.wrapper section.client-field div.client-card img.client-img{
   width: 100%;
   display: block;
+  margin-top: 50px;
 }
 
 div.wrapper section.client-field div.client-card div.client-modal{
@@ -46,10 +55,15 @@ div.wrapper section.client-field div.client-card div.client-modal{
   left: 0;
   width: 100%;
   height: 100%;
+  color: snow;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
 }
 
-/* div.wrapper section.client-field div.client-card:hover div.client-modal, */
-div.wrapper section.client-field div.client-card p.client-name:hover div.client-modal,
-/* div.wrapper section.client-field div.client-card img.client-img:hover div.client-modal*/{ 
+div.wrapper section.client-field div.client-card:hover div.client-modal,
+div.wrapper section.client-field div.client-card p:hover+div.client-modal,
+div.wrapper section.client-field div.client-card img:hover+div.client-modal{ 
   display: block;
 }
