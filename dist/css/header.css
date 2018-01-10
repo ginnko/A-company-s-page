@@ -61,9 +61,7 @@ header section#navigation nav.header-middle>ul>li {
 
 
 /*多层导航样式*/
-header section#navigation nav.header-middle>ul>li.hSpecial:hover {
-  min-height: 279px;
-}
+
 header section#navigation nav.header-middle>ul>li.hSpecial>ul ul {
   min-height: 200px;
 }
@@ -98,18 +96,24 @@ header section#navigation nav.header-middle>ul>li>ul>li>ul.tem-hide{
   display: none;
 }
 
-header section#navigation nav.header-middle>ul>li:hover {
-  background-color: #0d272f;
+@media screen and (min-width: 1026px){
+  header section#navigation nav.header-middle>ul>li.hSpecial:hover {
+    min-height: 279px;
+  }
+  header section#navigation nav.header-middle>ul>li:hover {
+    background-color: #0d272f;
+  }
+  
+  header section#navigation nav.header-middle>ul>li:hover ul {
+    display: block;
+    background-color: #0d272f;
+  }
+  header section#navigation nav.header-middle>ul>li ul li:hover{
+    display: block;
+    background-color: #3a5963;
+  }
 }
 
-header section#navigation nav.header-middle>ul>li:hover ul {
-  display: block;
-  background-color: #0d272f;
-}
-header section#navigation nav.header-middle>ul>li ul li:hover{
-  display: block;
-  background-color: #3a5963;
-}
 
 nav.header-middle a{
   width: 100%;
@@ -149,8 +153,7 @@ header section#navigation div.header-right div {
       width: 18px;
       height: 18px;
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 16px;
       right: 20px;
       cursor: pointer;
   }
@@ -168,14 +171,20 @@ header section#navigation div.header-right div {
   header section#navigation div#second-line {
       top: 12px;
   }
+
+  header section#navigation nav.header-middle>ul{
+      border-top: 1px solid #243034;
+  }
+  header section#navigation div.header-right,
   header section#navigation nav.header-middle {
       display: none;
   }
-  header section#navigation div.header-right {
-      display: none;
-  }
+  header section#navigation div.header-left{
+    top: 25px;
+  } 
   header section#navigation div.header-left a {
       width: 130px;
+      height: 50px;
   }
   header section#navigation div.header-right div {
       display: block;
@@ -188,6 +197,53 @@ header section#navigation div.header-right div {
       border: none;
   }
 }
+
+
+/*shrink-button样式变化*/
+.activeClockwise {
+  transform: rotate(45deg);
+  top: 8px !important;
+}
+
+.activeAntiClockwise {
+  transform: rotate(-45deg);
+  top: 8px !important;
+}
+
+.expand {
+  background-color: rgba(11, 24, 29, 1) !important;
+  height: 100% !important;
+  z-index: 100 !important;
+}
+
+.vertical {
+  display: block !important;
+  text-align: left !important;
+  border: none !important;
+  margin-bottom: 20px !important;
+  margin-left: 10px !important;
+  padding-left: 0!important;
+  line-height: 1.5rem !important;
+  font-size: 0.875rem !important;
+}
+
+.header-right-shrink {
+  display: block !important;
+  position: static !important;
+  transform: none !important;
+}
+
+.header-middle-shrink {
+  display: block !important;
+  padding-top: 55px !important;
+  border-bottom: 1px solid #243034 !important;
+
+}
+
+.border-shrink {
+  border-bottom: 1px solid #243034;
+}
+
 
 /* 工具样式 */
 
