@@ -39,3 +39,25 @@ function showOne(value){
 
 // 手机模式下导航条箭头状态改变
 var arrow = document.getElementsByClassName("header-toggle");
+Array.prototype.map.call(arrow, function(ele){
+  ele.getElementsByTagName("span")[0].setAttribute("data-content", "");
+});
+var arrowLen = arrow.length;
+for(var i = 0; i < arrowLen; i++){
+  arrow[i].addEventListener("click", function(e){
+    var span = e.target.getElementsByTagName("span")[0];
+    var toggle = e.target.getAttribute("toggle");
+    var ul = e.target.parentNode.getElementsByTagName("ul")[0];
+    console.log
+    if(toggle == 0){//此处要加上屏幕尺寸的判断
+      span.setAttribute("data-content", '');
+      e.target.setAttribute("toggle", "1");
+      ul.setAttribute("style", "display: none;");
+    }else{
+      span.setAttribute("data-content", '');
+      e.target.setAttribute("toggle", "0");
+      ul.setAttribute("style", "display: block; position: static;");
+    }
+    
+  });
+}
