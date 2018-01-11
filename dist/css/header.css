@@ -196,6 +196,11 @@ header section#navigation div.header-right div {
   header section#navigation div.header-right div a {
       border: none;
   }
+  header section#navigation nav.header-middle span.header-toggle::before{
+    content: "\f123";
+    font-family: "ico";
+    float: right;
+  }
 }
 
 
@@ -225,6 +230,7 @@ header section#navigation div.header-right div {
   padding-left: 0!important;
   line-height: 1.5rem !important;
   font-size: 0.875rem !important;
+  padding-right: 20px!important;
 }
 
 .header-right-shrink {

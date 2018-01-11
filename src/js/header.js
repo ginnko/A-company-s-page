@@ -36,3 +36,6 @@ function showOne(value){
     }
   });
 }
+
+// 手机模式下导航条箭头状态改变
+var arrow = document.getElementsByClassName("header-toggle");
