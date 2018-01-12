@@ -112,6 +112,9 @@ header section#navigation nav.header-middle>ul>li>ul>li>ul.tem-hide{
     display: block;
     background-color: #3a5963;
   }
+  header section#navigation nav.header-middle a.header-toggle span{
+    display: none;
+  }
 }
 
 
@@ -147,9 +150,7 @@ header section#navigation div.header-right div {
   margin: 0;
   padding: 0;
 }
-header section#navigation nav.header-middle a.header-toggle span{
-  display: none;
-}
+
 
 @media screen and (max-width: 1025px) {
   header section#navigation div.shrink-button {
@@ -203,7 +204,21 @@ header section#navigation nav.header-middle a.header-toggle span{
     content: attr(data-content);
     font-family: "ico";
     float: right;
-    display: inline-block;
+  }
+
+  header section#navigation nav.header-middle li.header-content ul.second-grade{
+    margin-left: 10px;
+    text-indent: 0;
+  }
+  /* header section#navigation nav.header-middle li.header-content ul.second-grade>li{
+    position: static;
+  } */
+
+  header section#navigation nav.header-middle li.header-content ul.third-grade{
+    display: none;
+    position: static;
+    margin-left: 10px;
+    text-indent: 0;
   }
 }
 

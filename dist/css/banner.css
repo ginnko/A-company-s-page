@@ -57,3 +57,20 @@ div.stackLink a{
   font-size: 12px;
   color: #82898c;
 }
+
+@media screen and (max-width: 1025px){
+  section.banner{
+    height: 240px;
+  }
+  section.banner ul li div#banner-intro{
+    font-size: 20px;
+  }
+  section.banner ul li div#banner-content{
+    font-size: 14px;
+  }
+  section.banner ul li img#banner-image{
+    width: 100%;
+    height: auto;
+  }
+
+}

@@ -150,3 +150,73 @@ section.frame p{
 section.frame img{
   width: 100%;
 }
+
+
+@media screen and (max-width: 1025px){
+  section.brief-intro div.introTitle span{
+    font-size: 18px;
+    vertical-align: middle;
+  }
+  section.brief-intro div.introTitle img{
+    vertical-align: middle;
+  }
+  section.brief-intro ul.introContent{
+    width: 100%;
+  }
+  section.brief-intro ul.introContent li{
+    width: 100%;
+    background: url(../img/feature_bg@v2.0.png) no-repeat center/cover;
+    margin-left: 0!important;
+  }
+  section.brief-intro ul.introContent li div span{
+    font-size: 16px;
+  }
+  section.brief-intro ul.introContent li div p{
+    font-size: 12px;
+  }
+  section.goodness div img,
+  section.goodness div div{
+    float: none;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  section.goodness div div p{
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    text-align:center;
+  }
+  section.goodness div div p:nth-of-type(1){
+    font-size: 16px;
+  }
+  section.goodness div div p:nth-of-type(2){
+    font-size: 12px;
+  }
+  section.fix-problem p{
+    font-size: 18px;
+    text-align: center;
+  }
+  section.fix-problem div div img{
+    width: 27px;
+    height: auto;
+  }
+  section.fix-problem div div span{
+    font-size: 16px;
+  }
+  section.fix-problem div p{
+    font-size: 12px;
+  }
+  section.frame p{
+    font-size: 18px;
+    text-align: center;
+  }
+  section.banner ul li a{
+    width: 75px;
+    height: 25px;
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+}
