@@ -1,3 +1,4 @@
+(function(){
 var target = document.getElementById("headTarget");
 var children = target.getElementsByTagName("ul");
 
@@ -14,7 +15,7 @@ target.addEventListener("mouseover", function(e){
 
 function isChild(node, ele){
   var windowWidth = window.document.documentElement.clientWidth;
-  return node && node.nodeName == ele && windowWidth <= 1025;
+  return node && node.nodeName == ele && windowWidth > 1025;
 }
 
 function getValue(node){
@@ -36,9 +37,9 @@ function showOne(value){
   });
 }
 
-// 手机模式下导航条箭头状态改变
+// 手机模式下二级导航条状态改变
 
-(function(){
+
   var arrow = document.getElementsByClassName("header-toggle");
   Array.prototype.map.call(arrow, function(ele){
     ele.getElementsByTagName("span")[0].setAttribute("data-content", "");
@@ -65,6 +66,17 @@ function showOne(value){
       
     });
   }
+
+// 手机模式下三级导航条状态改变
+
+// var thirdGrade = document.getElementsByClassName("third-grade");
+// var thirdLen = thirdGrade.length;
+// for(var j = 0; j < thirdLen; j++){
+//   thirdGrade[j].addEventListener("click", function(e){
+//     e.target.setAttribute("style", "display: block;");
+//   });
+// }
+
 }());
 
 

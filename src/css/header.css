@@ -220,6 +220,15 @@ header section#navigation div.header-right div {
     margin-left: 10px;
     text-indent: 0;
   }
+  header section#navigation {
+    width: 100%;
+    height: 40px;
+  }
+  header section#navigation nav.header-middle ul#headTarget>li{
+    width: 100%;
+    position: static;
+  }
+
 }
 
 
