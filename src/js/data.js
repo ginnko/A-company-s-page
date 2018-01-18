@@ -38,5 +38,13 @@ var data = {
     'min-content':'有云，分享创造共赢',
     'url': './img/banner-clients.png',
     'button': false
+  },
+  '合作伙伴':{
+    'parent': '解决方案',
+    'title': '合作创造更多价值',
+    'content': '有云构建的高效率、低成本工作方式让越来越多的伙伴聚集到这里，在这里碰撞出更多火花，梦想变为可行。',
+    'min-content':'合作创造更多价值',
+    'url': './img/banner-clients.png',
+    'button': false
   }
 };
