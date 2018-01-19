@@ -1,5 +1,15 @@
+/* ============工具样式================ */
+
+.moreDisappear{
+  display: none!important;
+}
+.moreShow{
+  display: block;
+}
+
+/* ===========具体样式============= */
 div.wrapper ul{
-  width: 90%;
+  width: 80%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -7,7 +17,44 @@ div.wrapper ul{
 div.wrapper ul li.coCard{
   display: inline-block;
   width: 250px;
-  height: 220px;
+  height: 200px;
+  margin-bottom: 120px;
+  position: relative;
+}
+div.wrapper ul li.coCard div{
+  height: 180px;
+  overflow: hidden;
+}
+div.wrapper ul li.coCard div p{
+  font-size: 13px;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+  line-height: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+div.wrapper ul li.coCard a{
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  background-color: rgb(66, 106, 238);
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 20px;
+  visibility: hidden;
+  position: absolute;
+  right: 30px;
+  top: 190px;
+}
+
+div.wrapper ul li.coCard:hover a{
+  visibility: visible;
 }
 
 div.wrapper ul li.coCard:nth-of-type(2),
@@ -19,7 +66,7 @@ div.wrapper ul li.coCard:nth-of-type(8){
 }
 
 
-div.wrapper ul li.coCard div{
+div.wrapper ul li.coCard div div{
   width: 215px;
   height: 105px;
   background-size: contain;
@@ -27,27 +74,27 @@ div.wrapper ul li.coCard div{
   background-position: center center;
 }
 
-div.wrapper ul li.coCard:nth-of-type(1) div{
+div.wrapper ul li.coCard:nth-of-type(1) div div{
   background-image: url('../img/cisco.png');
 }
-div.wrapper ul li.coCard:nth-of-type(2) div{
+div.wrapper ul li.coCard:nth-of-type(2) div div{
   background-image: url('../img/rackspace.png');
 }
-div.wrapper ul li.coCard:nth-of-type(3) div{
+div.wrapper ul li.coCard:nth-of-type(3) div div{
   background-image: url('../img/citrix.png');
 }
-div.wrapper ul li.coCard:nth-of-type(4) div{
+div.wrapper ul li.coCard:nth-of-type(4) div div{
   background-image: url('../img/intel.png');
 }
-div.wrapper ul li.coCard:nth-of-type(5) div{
+div.wrapper ul li.coCard:nth-of-type(5) div div{
   background-image: url('../img/zhongjin.png');
 }
-div.wrapper ul li.coCard:nth-of-type(6) div{
+div.wrapper ul li.coCard:nth-of-type(6) div div{
   background-image: url('../img/wanguo.png');
 }
-div.wrapper ul li.coCard:nth-of-type(7) div{
+div.wrapper ul li.coCard:nth-of-type(7) div div{
   background-image: url('../img/senhua.png');
 }
-div.wrapper ul li.coCard:nth-of-type(8) div{
+div.wrapper ul li.coCard:nth-of-type(8) div div{
   background-image: url('../img/yunkefu.png');
 }
