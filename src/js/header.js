@@ -12,6 +12,16 @@ target.addEventListener("mouseover", function(e){
   }
 });
 
+window.addEventListener('resize', function(){
+  var windowWidth = window.document.documentElement.clientWidth;
+  var ul = document.getElementsByClassName('second-grade');
+  var len = ul.length;
+  if(windowWidth > 1025){
+    for(var i = 0; i < len; i++){
+      ul[i].setAttribute('style', '');
+    }
+  }
+});
 
 function isChild(node, ele){
   var windowWidth = window.document.documentElement.clientWidth;

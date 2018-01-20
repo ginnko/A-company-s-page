@@ -1,4 +1,5 @@
-//滚动显示导航条背景操作
+(function(){
+    //滚动显示导航条背景操作
 var nav = document.getElementById("navigation");
 
 window.addEventListener("scroll", function () {
@@ -86,6 +87,9 @@ window.addEventListener("resize", function(){
       }
   }
 });
+}());
+
+
 //鼠标移到导航项上导航条颜色改变
 //此处可以使用apply或call绑定this，这个试一下
 // var navItem = document.getElementsByClassName("header-content");

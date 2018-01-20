@@ -12,8 +12,7 @@ header section#navigation {
 
 
 /* div.inner-position {
-position: relative;
-height: 80px;
+  height: auto;
 } */
 
 header section#navigation div.header-left {
@@ -209,16 +208,23 @@ header section#navigation div.header-right div {
   header section#navigation nav.header-middle li.header-content ul.second-grade{
     margin-left: 10px;
     text-indent: 0;
+    /* height: auto; */
   }
-  /* header section#navigation nav.header-middle li.header-content ul.second-grade>li{
-    position: static;
-  } */
+  header section#navigation nav.header-middle li.header-content ul.second-grade li{
+    line-height: 40px;
+  }
+
+  header section#navigation nav.header-middle li.header-content ul.second-grade>li,
+  header section#navigation nav.header-middle li.header-content ul.second-grade li ul.third-grade{
+    height: auto;
+  }
 
   header section#navigation nav.header-middle li.header-content ul.third-grade{
     display: none;
     position: static;
     margin-left: 10px;
     text-indent: 0;
+    min-height: 0;
   }
   header section#navigation {
     width: 100%;
