@@ -46,5 +46,14 @@ var data = {
     'min-content':'合作创造更多价值',
     'url': './img/banner-clients.png',
     'button': false
+  },
+  '产品服务':{
+    'parent': '托管云',
+    'grandpa': '服务与支持',
+    'title': '打造最适合您的业务的云计算环境',
+    'content': '有云团队将根据您的业务需求，与您现有的IT团队一起，打造最适合您的业务的云计算环境。',
+    'min-content':'打造最适合您的业务的云计算环境',
+    'url': './img/servicebannerpic.png',
+    'button': false
   }
 };

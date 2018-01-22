@@ -99,3 +99,59 @@ div.wrapper ul.coCards li.coCard:nth-of-type(7) div div{
 div.wrapper ul.coCards li.coCard:nth-of-type(8) div div{
   background-image: url('../img/yunkefu.png');
 }
+
+div.wrapper ul.coShow{
+  font-size: 0;
+  text-align: left;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.wrapper ul.coShow li{
+  display: inline-block;
+  width: 280px;
+  height: 150px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+div.wrapper ul.coShow li:nth-of-type(1){
+  background-image: url('../img/huliangangwan.png');
+}
+div.wrapper ul.coShow li:nth-of-type(2){
+  background-image: url('../img/guanghuanxinwang.png');
+}
+div.wrapper ul.coShow li:nth-of-type(3){
+  background-image: url('../img/jinshanyun.png');
+}
+div.wrapper ul.coShow li:nth-of-type(4){
+  background-image: url('../img/wanguo.png');
+}
+div.wrapper ul.coShow li:nth-of-type(5){
+  background-image: url('../img/dell.png');
+}
+div.wrapper ul.coShow li:nth-of-type(6){
+  background-image: url('../img/emc.png');
+}
+div.wrapper ul.coShow li:nth-of-type(7){
+  background-image: url('../img/senhua.png');
+}
+div.wrapper ul.coShow li:nth-of-type(8){
+  background-image: url('../img/shenzhouyunrong.png');
+}
+div.wrapper ul.coShow li:nth-of-type(9){
+  background-image: url('../img/vm.png');
+}
+div.wrapper ul.coShow li:nth-of-type(10){
+  background-image: url('../img/citr.png');
+}
+div.wrapper ul.coShow li:nth-of-type(11){
+  background-image: url('../img/huawei.png');
+}
+div.wrapper ul.coShow li:nth-of-type(12){
+  background-image: url('../img/shijihulian.png');
+}
+div.wrapper ul.coShow li:nth-of-type(13){
+  background-image: url('../img/chinadi.png');
+}
