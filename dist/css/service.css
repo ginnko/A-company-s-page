@@ -109,34 +109,54 @@ div.service-middle a.service-apply{
 div.service-universe{
   position: relative;
   padding-top: 100px;
-  border: 2px solid red;
   background-image: url(../img/service2.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   overflow: hidden;
   background-attachment: fixed;
+  height: 800px;
+  text-align: center;
 }
-/* div.service-universe{
-  overflow: hidden;
-  height: 500px;
-} */
-div.service-universe img{
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: -100;
-}
+
+
 div.service-universe p{
   font-size: 24px;
   color: #ffffff;
   text-align: center;
   /* margin-top: 200px; */
 }
-div.service-universe div{
-  height: 500px;
-  width: 90%;
+div.service-universe {
+  z-index: -100;
+}
+div.service-universe ul{
+  /* z-index: 10; */
+  /* display: inline-block; */
+  margin-top: 200px;
+}
+div.service-universe ul li.service-mirror{
+  width: 900px;
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid green;
+  /* transform: rotate(-90deg); */
+  margin-top: -100px;
+}
+div.service-universe ul li.service-mirror img{
+  z-index: 10;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  /* transform:  matrix3d(0,-.45886115,-.65532164,0,.8,0,0,0,0,-.81915204,.57357644,0,-354.5,0,0,1); */
+}
+div.service-universe a{
+  display: inline-block;
+  padding: 0 14px;
+  color: #ffffff;
+  font-size: 16px;
+  background-color: #c2003d;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 2px;
+  margin-top: 50px;
 }
