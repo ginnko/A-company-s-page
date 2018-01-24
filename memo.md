@@ -125,5 +125,8 @@ background: linear-gradient(to bottom, #020515, #06223f);括号中的分别表�
    * 在main.js中对window对象添加[resize](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onresize)事件，用来监控window尺寸的变化  
    * 使用属性**window.document.documentElement.clientWidth**来判断窗口尺寸是否达到临界点。关于[**clientWidth**](https://developer.mozilla.org/en-US/docs/Web/API/Element/clientWidth)：includes padding but not the vertical scrollbar (if present, if rendered), border or margin。
    ![clientHeight](https://i.imgur.com/4Bt3sAQ.png)
-## 2017.11.14
+## 2018.1.24
+1. 实现service页面的宇宙背景的效果:在父元素中设置如下两个关键样式  
+background-attachment: fixed;
+overflow: hidden;
 

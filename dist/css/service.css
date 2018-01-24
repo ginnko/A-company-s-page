@@ -108,17 +108,23 @@ div.service-middle a.service-apply{
 }
 div.service-universe{
   position: relative;
-  padding-top: 200px;
-  overflow: hidden;
-  /* background-image: url(./img/service2.jpg);
+  padding-top: 100px;
+  border: 2px solid red;
+  background-image: url(../img/service2.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain; */
+  background-size: cover;
+  overflow: hidden;
+  background-attachment: fixed;
 }
+/* div.service-universe{
+  overflow: hidden;
+  height: 500px;
+} */
 div.service-universe img{
   position: fixed;
   width: 100%;
-  top: 300px;
+  top: 0;
   z-index: -100;
 }
 div.service-universe p{
@@ -128,5 +134,9 @@ div.service-universe p{
   /* margin-top: 200px; */
 }
 div.service-universe div{
-  height: 800px;
+  height: 500px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid green;
 }
