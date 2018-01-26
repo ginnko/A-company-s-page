@@ -19,6 +19,12 @@
     fourthLink[0].innerHTML = document.title;
     thirdLink[1].innerHTML = data[title]['parent'];
     secondLink[1].innerHTML = data[title]['grandpa'];
+    window.addEventListener('resize', function(){
+      if(document.documentElement.clientWidth < 1025){
+        intro.innerHTML = document.title;
+      }
+    });
+
   }else{
     link4.style.display = 'none';
 

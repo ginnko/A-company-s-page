@@ -55,5 +55,14 @@ var data = {
     'min-content':'打造最适合您的业务的云计算环境',
     'url': './img/servicebannerpic.png',
     'button': false
+  },
+  '技术支持':{
+    'parent': '托管云',
+    'grandpa': '服务与支持',
+    'title': '打造用户持续交付新的价值。',
+    'content': '通过强大的运维监控系统和完善的持续集成体系，UnitedStack 云平台不断增加新的功能，为用户持续交付新的价值。',
+    'min-content':'打造基于 OpenStack 的强大云平台。',
+    'url': './img/bannerpic-technicalSupport.png',
+    'button': false
   }
 };

@@ -1,0 +1,47 @@
+div.wrapper div.support-structure{
+  text-align: center;
+}
+
+div.wrapper div.support-structure p{
+  color: black;
+}
+div.wrapper div.support-structure p:nth-of-type(1){
+  font-size: 24px;
+}
+div.wrapper div.support-structure img{
+  width: 50%;
+}
+div.wrapper div.support-structure p:nth-of-type(2){
+  font-size: 14px;
+}
+div.wrapper div.support-structure p:nth-of-type(3){
+  font-size: 14px;
+  text-indent: 2em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.wrapper div.support-statement{
+  height: 450px;
+  width: 100%;/*如果此处没有设定宽度100%,则下面第二个p的内容在chrome浏览器中会折行*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../img/yinghao.jpg);
+  position: relative;
+}
+div.wrapper div.support-statement>div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+div.wrapper div.support-statement p{
+  color: #ffffff;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  width: 870px;
+}
